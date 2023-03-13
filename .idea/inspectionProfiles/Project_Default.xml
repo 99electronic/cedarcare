@@ -1,0 +1,41 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="27">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="ons-navigator" />
+            <item index="7" class="java.lang.String" itemvalue="ons-splitter" />
+            <item index="8" class="java.lang.String" itemvalue="ons-page" />
+            <item index="9" class="java.lang.String" itemvalue="ons-list-title" />
+            <item index="10" class="java.lang.String" itemvalue="ons-splitter-content" />
+            <item index="11" class="java.lang.String" itemvalue="ons-splitter-side" />
+            <item index="12" class="java.lang.String" itemvalue="ons-list" />
+            <item index="13" class="java.lang.String" itemvalue="ons-card" />
+            <item index="14" class="java.lang.String" itemvalue="ons-toolbar" />
+            <item index="15" class="java.lang.String" itemvalue="ons-back-button" />
+            <item index="16" class="java.lang.String" itemvalue="ons-input" />
+            <item index="17" class="java.lang.String" itemvalue="ons-button" />
+            <item index="18" class="java.lang.String" itemvalue="ons-icon" />
+            <item index="19" class="java.lang.String" itemvalue="ons-bottom-toolbar" />
+            <item index="20" class="java.lang.String" itemvalue="ons-toolbar-button" />
+            <item index="21" class="java.lang.String" itemvalue="ons-list-header" />
+            <item index="22" class="java.lang.String" itemvalue="ons-list-item" />
+            <item index="23" class="java.lang.String" itemvalue="ons-switch" />
+            <item index="24" class="java.lang.String" itemvalue="ons-tabbar" />
+            <item index="25" class="java.lang.String" itemvalue="ons-tab" />
+            <item index="26" class="java.lang.String" itemvalue="ons-lazy-repeat" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
