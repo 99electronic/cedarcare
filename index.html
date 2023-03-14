@@ -47,10 +47,18 @@
         <i class="bi bi-phone"></i> +1 (425) 728-0907
       </div>
       <div class="d-none d-lg-flex social-links align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="javascript:void(0);" class="twitter" data-toggle="tooltip" data-placement="bottom" title="coming soon">
+          <i class="text-gray bi bi-twitter"></i>
+        </a>
+        <a href="javascript:void(0);" class="facebook" data-toggle="tooltip" data-placement="bottom" title="coming soon">
+          <i class="text-gray bi bi-facebook"></i>
+        </a>
+        <a href="javascript:void(0);" class="instagram" data-toggle="tooltip" data-placement="bottom" title="coming soon">
+          <i class="text-gray bi bi-instagram"></i>
+        </a>
+        <a href="javascript:void(0);" class="linkedin" data-toggle="tooltip" data-placement="bottom" title="coming soon">
+          <i class="text-gray bi bi-linkedin"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -85,7 +93,7 @@
       <h5>
         Where patients come first, always
       </h5>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <a href="#appointment" class="btn-get-started scrollto">Get Started</a>
     </div>
   </section><!-- End Hero -->
 
@@ -100,11 +108,11 @@
             <div class="content">
               <h3>Why Choose CedarCare?</h3>
               <p>
-                Our award-winning team of Stanford, Duke, and
-                Vanderbilt trained physicians provide the highest quality care at the most affordable out of pocket costs
+                Our award-winning team of Stanford, Duke, and Vanderbilt trained physicians provide the highest quality
+                care at the most affordable out of pocket costs
               </p>
               <div class="text-center">
-                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="#about" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -116,8 +124,8 @@
                     <i class="bx bx-receipt"></i>
                     <h4>Chronic Care Management</h4>
                     <p style="text-align: center;">
-                      Our team of physicians and health coaches are committed to improving your high blood pressure,
-                      diabetes, high cholesterol, and weight loss goals.
+                      We’re here to improve your blood pressure, diabetes, cholesterol,
+                      and weight loss goals through medications and health coaching
                     </p>
                   </div>
                 </div>
@@ -126,8 +134,8 @@
                     <i class="bx bx-cube-alt"></i>
                     <h4>Community Focus</h4>
                     <p style="text-align: center;">
-                      Named after the Cedar River that flows through our community,
-                      CedarCare has financial assistance programs for Renton residents who cannot afford copayments or medications.
+                      Named after the Cedar River that flows through our community, CedarCare has financial assistance
+                      programs for Renton residents
                     </p>
                   </div>
                 </div>
@@ -136,8 +144,8 @@
                     <i class="bx bx-images"></i>
                     <h4>Our Patients Come First</h4>
                     <p style="text-align: center;">
-                      Our motto is that “Patients come first, always.”
-                      You are more than a customer or a client to us. At CedarCare, you’re family.
+                      Our motto is that “Patients come first, always.” You are more than a customer or a client to us.
+                      At CedarCare, you’re family
                     </p>
                   </div>
                 </div>
@@ -161,53 +169,31 @@
         <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
           <div class="row">
             <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                     data-msg="Please enter at least 4 chars" disabled>
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+                     data-msg="Please enter a valid email" disabled>
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="department" id="department" class="form-select">
-                <option value="">Select Department</option>
-                <option value="Department 1">Department 1</option>
-                <option value="Department 2">Department 2</option>
-                <option value="Department 3">Department 3</option>
-              </select>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="doctor" id="doctor" class="form-select">
-                <option value="">Select Doctor</option>
-                <option value="Doctor 1">Doctor 1</option>
-                <option value="Doctor 2">Doctor 2</option>
-                <option value="Doctor 3">Doctor 3</option>
-              </select>
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4"
+                     data-msg="Please enter at least 4 chars" disabled>
               <div class="validate"></div>
             </div>
           </div>
 
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)" disabled></textarea>
             <div class="validate"></div>
           </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+          <div class="text-center">
+              <button type="submit" disabled>
+                <a href="#contact-form" style="color:white;">Make an Appointment (coming soon)</a>
+              </button>
           </div>
-          <div class="text-center"><button type="submit">Make an Appointment</button></div>
         </form>
 
       </div>
@@ -229,29 +215,30 @@
               gap between the young and the elderly. Many of our health coaches are highly motivated premedical students
               who want to someday go to medical school. From our experience, they provide exceptional medical care to our
               patients by building companionship and often genuine friendships with our elderly patients.
-              We are honored to have our physicians mentor our health coaches and watch many of them get into medical school to become doctors themselves.
+              We are honored to have our physicians mentor our health coaches and watch many of them get into medical
+              school to become doctors themselves
             </p>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Sohum Sheth</a></h4>
-              <p class="description">Sohum is one of our health coaches from Northeastern University who was accepted into
-                the University of Florida College of Medicine. Congrats future Dr. Sheth!</p>
+              <h4 class="title"><a href="">Mentorship</a></h4>
+              <p class="description">Every year, CedarCare has a track record of sending 3 or more premedical students
+                into the top medical schools in the US</p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Jason Gao</a></h4>
-              <p class="description">Jason Gao is one of our health coaches from Boston University who was accepted into the
-                University of Connecticut School of Medicine. Congrats future Dr. Gao!
+              <h4 class="title"><a href="">Lives Saved</a></h4>
+              <p class="description">Our health coaches have quickly notified our physicians when our patients at home
+                complained of chest pain, difficulty breathing, and thoughts of suicide before it was too late
               </p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-atom"></i></div>
-              <h4 class="title"><a href="">Timothy Chiu</a></h4>
-              <p class="description">Timothy is one of our health coaches from Boston University who was accepted into the X School of Medicine.
-                Congrats future Dr. Chiu!</p>
+              <h4 class="title"><a href="">Impact</a></h4>
+              <p class="description">Our health coaches make lasting and often lifelong changes in the lives of thousands
+                of patients suffering from chronic conditions</p>
             </div>
 
           </div>
@@ -266,7 +253,7 @@
 
         <div class="section-title">
           <h2 class="green">Services</h2>
-          <p>We are proud to offer the following services to our valued patients.</p>
+          <p>We are proud to offer the following services to our valued patients</p>
         </div>
 
         <div class="row">
@@ -372,27 +359,30 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <div class="php-email-form">
+            <div id="contact-form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" id="contact-name" class="form-control" id="contact-name" placeholder="Your Name" required>
+                  <input type="text" id="contact-us-name" class="form-check form-control" id="contact-name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" id="contact-email" placeholder="Your Email" required>
+                  <input type="email" class="form-check form-control" id="contact-us-email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" id="contact-subject" placeholder="Subject" required>
+                <input type="text" class="form-check form-control" id="contact-us-subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" id="contact-message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-check form-control" id="contact-us-message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div id="email-result" style="text-align:center;margin-top:-8px;margin-bottom:8px;">&nbsp;</div>
+              <div class="text-center">
+                <button id="submit-contact-us" type="submit" class="click-me">Send Message</button>
+              </div>
             </div>
 
           </div>
@@ -414,22 +404,29 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>cedarcare.org</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="https://99electronic.com">99electronic.com</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="javascript:void(0);" style="background-color: var(--text-gray);" class="twitter" data-toggle="tooltip" data-placement="top" title="coming soon">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="javascript:void(0);" style="background-color: var(--text-gray);" class="facebook" data-toggle="tooltip" data-placement="top" title="coming soon">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="javascript:void(0);" style="background-color: var(--text-gray);" class="instagram" data-toggle="tooltip" data-placement="top" title="coming soon">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="javascript:void(0);" style="background-color: var(--text-gray);" class="linkedin" data-toggle="tooltip" data-placement="top" title="coming soon">
+          <i class="bx bxl-linkedin"></i>
+        </a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -442,10 +439,11 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/axios.js"></script>
+  <script src="assets/js/api.js"></script>
 
 </body>
 

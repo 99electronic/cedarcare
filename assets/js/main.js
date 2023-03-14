@@ -4,9 +4,11 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+let print_r = (data) => {
+  console.log(JSON.stringify(data));
+}
 (function() {
   "use strict";
-
   /**
    * Easy selector helper function
    */
@@ -218,5 +220,55 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+  //submit submit-contact-us
+  document.addEventListener('click', function (event) {
+    // If the clicked element doesn't have the right selector, bail
+    if (!event.target.matches('.click-me')) return;
+    // Don't follow the link
+    event.preventDefault();
+    switch(event.target.id) {
+      case "submit-contact-us":
+        submitContactUsForm();
+        break;
+    }
+  }, false);
+  document.addEventListener('input', function (event) {
+    // If the clicked element doesn't have the right selector, bail
+    if (!event.target.matches('.form-check')) return;
+    // Don't follow the link
+    event.preventDefault();
+    document.getElementById("email-result").innerHTML = "&nbsp;";
+  }, false);
+  function setTooltips() {
+    let tooltips = document.querySelectorAll('[data-toggle="tooltip"]');
+    for(let i = 0; i < tooltips.length; i++) {
+      let tooltip = new bootstrap.Tooltip(tooltips[i]);
+    }
+  }
+  window.addEventListener('DOMContentLoaded', function() {
+    setTooltips();
+  }, false);
+})();
 
-})()
+let submitContactUsForm = () => {
+  let params = {
+    endpointAction: "/website-email-sender-form",
+    name: document.getElementById("contact-us-name").value,
+    subject: document.getElementById("contact-us-subject").value,
+    email: document.getElementById("contact-us-email").value,
+    message: document.getElementById("contact-us-message").value
+  }
+  api.call(params)
+      .then((res) => {
+        if (res.email == document.getElementById("contact-us-email").value && res.success == true) {
+          document.getElementById("contact-us-name").value = "";
+          document.getElementById("contact-us-email").value = "";
+          document.getElementById("contact-us-subject").value = "";
+          document.getElementById("contact-us-message").value = "";
+          document.getElementById("email-result").innerHTML = "<span style='color:green'>Message Sent! Thank You. We will get back to you ASAP</span>";
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+}

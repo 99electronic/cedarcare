@@ -5,11 +5,12 @@
 * License: https://bootstrapmade.com/license/
 */
 :root {
-  --green: #00996A;
-  --green2: #50AA51;
+  --green: #466e4b;
+  --green2: #456e4b;
   --white: #ffffff;
   --light-green: rgba(2, 157, 109, 0.45);
   --dark-green: #008679;
+  --text-gray: #919191;
   --font-size12: 12px;
   --font-size14: 14px;/*basic font size*/
   --font-size16: 16px;
@@ -1812,4 +1813,8 @@ section {
 
 .green {
   color: var(--green)!important;
+}
+
+.text-gray {
+  color: var(--text-gray);
 }
