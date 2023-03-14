@@ -1835,8 +1835,10 @@ section {
     background-repeat:   no-repeat;
     background-position: center center;
   }
-  .map-container img
+  .google-map
   {
+    width: 100%;
+    height: 300px;
     max-width: 600px;
     max-height:250px;
     opacity: 0;
@@ -1852,8 +1854,10 @@ section {
     background-repeat:   no-repeat;
     background-position: center center;
   }
-  .map-container img
+  .google-map
   {
+    width: 100%;
+    height: 300px;
     max-width: 600px;
     max-height:250px;
     opacity: 0;
