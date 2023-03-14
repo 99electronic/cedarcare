@@ -225,7 +225,10 @@ let print_r = (data) => {
     // If the clicked element doesn't have the right selector, bail
     if(event.target.matches('#make-appointment')) {
       document.getElementById("appointment-button-container")
-          .innerHTML="<h5 class='green'><span class='fa fa-angle-right'></span> You are being redirected to our appointment booking service...</h5>";
+          .innerHTML="<h5 class='green'>" +
+          "...you are being redirected to our appointment booking service " +
+          "<span class='fa fa-angle-right' style='transform: translateY(2px)'></span>" +
+          "</h5>";
       setTimeout(() => {
         document.getElementById("appointment-button-container")
             .innerHTML=`<button class="appointment-btn" type="submit">
