@@ -5,7 +5,7 @@
 * License: https://bootstrapmade.com/license/
 */
 :root {
-  --green: #466e4b;
+  --green: #538059;
   --green2: #456e4b;
   --green3: #29432d;
   --white: #ffffff;
@@ -1824,9 +1824,15 @@ section {
   color: var(--green3)!important;
 }
 
-
+.top-logo {
+  width: 325px;
+  height: 40px;
+}
 
 @media only screen and (max-width: 770px ) {
+  .top-appointment {
+    display: none;
+  }
   a.map-container {
     display: block;
     background-image: url("/assets/img/mix/google-map-static-mobile.webp");
@@ -1846,6 +1852,13 @@ section {
 
 /* large screen, shown by default */
 @media only screen and (min-width: 771px ) {
+  .top-appointment {
+    display: inline;
+  }
+  .top-logo {
+    width: 325px;
+    height: 40px;
+  }
   a.map-container {
     display: block;
     background-image: url("/assets/img/mix/google-map-static-desktop.webp");
@@ -1861,15 +1874,6 @@ section {
     max-height:250px;
     opacity: 0;
   }
-}
-
-.appointment-form {
-  display:flex;
-  justify-content: center;
-}
-
-.appointment-form div {
-
 }
 
 
