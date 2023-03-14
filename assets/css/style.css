@@ -710,7 +710,6 @@ section {
 
 .why-us .content .more-btn {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
   padding: 6px 30px 8px 30px;
   color: #fff;
   border-radius: 50px;
@@ -1792,7 +1791,7 @@ section {
   color: #444444;
 }
 
-#footer .social-links a {
+#footer .social-links span {
   font-size: var(--font-size18);
   display: inline-block;
   background: var(--green);
@@ -1807,7 +1806,7 @@ section {
   transition: 0.3s;
 }
 
-#footer .social-links a:hover {
+#footer .social-links span:hover {
   background: var(--green);
   color: #fff;
   text-decoration: none;
