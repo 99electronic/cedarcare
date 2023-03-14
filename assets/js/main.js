@@ -26,9 +26,9 @@
     let selectEl = select(el, all)
     if (selectEl) {
       if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener,{passive: true}))
+        selectEl.forEach(e => e.addEventListener(type, listener))
       } else {
-        selectEl.addEventListener(type, listener,{passive: true})
+        selectEl.addEventListener(type, listener)
       }
     }
   }
@@ -37,7 +37,7 @@
    * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener, {passive: true})
+    el.addEventListener('scroll', listener)
   }
 
   /**
@@ -57,7 +57,7 @@
       }
     })
   }
-  window.addEventListener('load', navbarlinksActive, {passive: true})
+  window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
   /**
@@ -93,7 +93,7 @@
         }
       }
     }
-    window.addEventListener('load', headerScrolled, {passive: true})
+    window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
 
@@ -109,7 +109,7 @@
         backtotop.classList.remove('active')
       }
     }
-    window.addEventListener('load', toggleBacktotop, {passive: true})
+    window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
 
@@ -159,7 +159,7 @@
         scrollto(window.location.hash)
       }
     }
-  }, {passive: true});
+  });
 
   /**
    * Preloader
@@ -168,7 +168,7 @@
   if (preloader) {
     window.addEventListener('load', () => {
       preloader.remove()
-    }, {passive: true});
+    });
   }
 
   /**
