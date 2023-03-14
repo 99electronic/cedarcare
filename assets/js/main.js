@@ -248,6 +248,11 @@ let print_r = (data) => {
   window.addEventListener('DOMContentLoaded', function() {
     setTooltips();
   }, false);
+
+  setTimeout(() => {
+    document.getElementById("google-maps-iframe").innerHTML = '<iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.529377523902!2d-122.21455998424871!3d47.44061940742204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905d045a681911%3A0x768c7ef2309d86a6!2s4300%20Talbot%20Rd%20S%20Suite%23%20314%2C%20Renton%2C%20WA%2098055!5e0!3m2!1sen!2sus!4v1678775958300!5m2!1sen!2sus" allowfullscreen></iframe>';
+  }, 350);
+
 })();
 let isValidEmail = (email) => {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
