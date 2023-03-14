@@ -7,6 +7,7 @@
 :root {
   --green: #466e4b;
   --green2: #456e4b;
+  --green3: #29432d;
   --white: #ffffff;
   --light-green: rgba(2, 157, 109, 0.45);
   --dark-green: #008679;
@@ -1818,4 +1819,8 @@ section {
 
 .text-gray {
   color: var(--text-gray);
+}
+
+.text-green-dark {
+  color: var(--green3)!important;
 }
