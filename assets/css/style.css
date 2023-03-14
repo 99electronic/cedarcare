@@ -8,6 +8,8 @@
   --green: #00996A;
   --green2: #50AA51;
   --white: #ffffff;
+  --light-green: rgba(2, 157, 109, 0.45);
+  --dark-green: #008679;
 }
 /*--------------------------------------------------------------
 # General
@@ -56,7 +58,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid var(--green);
-  border-top-color: rgba(2, 157, 109, 0.45);
+  border-top-color: var(--light-green);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -108,7 +110,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #008679;
+  background: var(--dark-green);
   color: #fff;
 }
 
@@ -158,7 +160,7 @@ h6 {
 }
 
 #topbar .social-links a {
-  color: #008679;
+  color: var(--dark-green);
   padding-left: 15px;
   display: inline-block;
   line-height: 1px;
@@ -223,7 +225,7 @@ h6 {
 }
 
 .appointment-btn:hover {
-  background: #008679;
+  background: var(--dark-green);
   color: #fff;
 }
 
@@ -737,7 +739,7 @@ section {
 --------------------------------------------------------------*/
 .about .icon-boxes h4 {
   font-size: 18px;
-  color: #008679;
+  color: var(--dark-green);
   margin-bottom: 15px;
 }
 
@@ -1523,7 +1525,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #008679;
+  color: var(--dark-green);
 }
 
 .contact .info .email,
@@ -1791,4 +1793,8 @@ section {
   background: var(--green);
   color: #fff;
   text-decoration: none;
+}
+
+.green {
+  color: var(--green)!important;
 }
