@@ -1,6 +1,7 @@
 window.api = {}
 window.api = {}
 window.api.APIendpoint      = "https://dzvc0bq1f1.execute-api.us-east-2.amazonaws.com/dev";
+window.api.healow = "https://healow.com/apps/practice/eugene-gu-md-inc-ps-26055?v=2&t=1";
 //basic api query PROMISE
 window.api.API = function (data, method, endpoint) {
     return new Promise((success, fail) => {

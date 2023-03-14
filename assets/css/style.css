@@ -1863,6 +1863,15 @@ section {
   }
 }
 
+.appointment-form {
+  display:flex;
+  justify-content: center;
+}
+
+.appointment-form div {
+
+}
+
 
 
 

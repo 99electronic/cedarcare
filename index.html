@@ -162,46 +162,17 @@
     <!-- ======= Appointment Section ======= -->
     <section id="appointment" class="appointment section-bg">
       <div class="container">
-
         <div class="section-title">
           <h2 class="green">Make an Appointment</h2>
           <p>Take the first step towards a healthier you by booking an appointment</p>
         </div>
-
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <label for="appointment-name"></label>
-              <input type="text" class="form-control" id="appointment-name" placeholder="Your Name" data-rule="minlen:4"
-                     data-msg="Please enter at least 4 chars" disabled>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <label for="appointment-email"></label>
-              <input type="email" class="form-control" id="appointment-email" placeholder="Your Email" data-rule="email"
-                     data-msg="Please enter a valid email" disabled>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <label for="appointment-phone"></label>
-              <input type="tel" class="form-control" id="appointment-phone" placeholder="Your Phone" data-rule="minlen:4"
-                     data-msg="Please enter at least 4 chars" disabled>
-              <div class="validate"></div>
-            </div>
+        <div class="php-email-form mt-2">
+          <div id="appointment-button-container" class="text-center">
+            <button class="appointment-btn" type="submit">
+              <span href="#" id="make-appointment" style="color:white;">Make an Appointment</span>
+            </button>
           </div>
-
-          <div class="form-group mt-3">
-            <label for="appointment-message"></label>
-            <textarea id="appointment-message" class="form-control" rows="5" placeholder="Message (Optional)" disabled></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="text-center">
-              <button type="submit" disabled>
-                <a href="#contact-form" style="color:white;">Make an Appointment (coming soon)</a>
-              </button>
-          </div>
-        </form>
-
+        </div>
       </div>
     </section><!-- End Appointment Section -->
 
@@ -210,10 +181,7 @@
       <div class="container-fluid">
 
         <div class="row">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-
-          </div>
-
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative"></div>
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
             <h3 class="green">Training the next generation of doctors.</h3>
             <p class="">

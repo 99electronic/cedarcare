@@ -223,6 +223,17 @@ let print_r = (data) => {
   //submit submit-contact-us
   document.addEventListener('click', function (event) {
     // If the clicked element doesn't have the right selector, bail
+    if(event.target.matches('#make-appointment')) {
+      document.getElementById("appointment-button-container")
+          .innerHTML="<h5 class='green'><span class='fa fa-angle-right'></span> You are being redirected to our appointment booking service...</h5>";
+      setTimeout(() => {
+        document.getElementById("appointment-button-container")
+            .innerHTML=`<button class="appointment-btn" type="submit">
+              <span href="#" id="make-appointment" style="color:white;">Make an Appointment</span>
+            </button>`;
+            window.open(api.healow, '_blank');
+      }, 3000);
+    }
     if (!event.target.matches('.click-me')) return;
     // Don't follow the link
     event.preventDefault();
