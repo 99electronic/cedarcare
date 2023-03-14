@@ -10,6 +10,21 @@
   --white: #ffffff;
   --light-green: rgba(2, 157, 109, 0.45);
   --dark-green: #008679;
+  --font-size12: 12px;
+  --font-size14: 14px;/*basic font size*/
+  --font-size16: 16px;
+  --font-size18: 18px;
+  --font-size20: 20px;
+  --font-size22: 22px;
+  --font-size24: 24px;
+  --font-size26: 26px;
+  --font-size28: 28px;
+  --font-size30: 30px;/*header logo*/
+  --font-size32: 32px;/*section title*/
+  --font-size34: 34px;/*why us h3*/
+  --font-size36: 36px;/*count box -not in use*/
+  --font-size40: 40px;/*why ys - icon boxes*/
+  --font-size48: 48px;/*hero title*/
 }
 /*--------------------------------------------------------------
 # General
@@ -104,7 +119,7 @@ h6 {
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: var(--font-size28);
   color: #fff;
   line-height: 0;
 }
@@ -129,7 +144,7 @@ h6 {
 #topbar {
   background: #fff;
   height: 40px;
-  font-size: 14px;
+  font-size: var(--font-size14);
   transition: all 0.5s;
   z-index: 996;
 }
@@ -192,7 +207,7 @@ h6 {
 }
 
 #header .logo {
-  font-size: 30px;
+  font-size: var(--font-size30);
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -220,7 +235,7 @@ h6 {
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: var(--font-size14);
   display: inline-block;
 }
 
@@ -240,7 +255,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -269,7 +284,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: var(--font-size14);
   color: #2c4964;
   white-space: nowrap;
   transition: 0.3s;
@@ -279,7 +294,7 @@ h6 {
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: var(--font-size12);
   line-height: 0;
   margin-left: 5px;
 }
@@ -313,7 +328,7 @@ h6 {
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: var(--font-size14);
   font-weight: 500;
   text-transform: none;
   color: #082744;
@@ -321,7 +336,7 @@ h6 {
 }
 
 .navbar .dropdown ul a i {
-  font-size: 12px;
+  font-size: var(--font-size12);
 }
 
 .navbar .dropdown ul a:hover,
@@ -364,7 +379,7 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #2c4964;
-  font-size: 28px;
+  font-size: var(--font-size28);
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -423,7 +438,7 @@ h6 {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: var(--font-size16);
   color: #2c4964;
   border: none;
 }
@@ -460,7 +475,7 @@ h6 {
 }
 
 .navbar-mobile .dropdown ul a i {
-  font-size: 12px;
+  font-size: var(--font-size12);
 }
 
 .navbar-mobile .dropdown ul a:hover,
@@ -490,7 +505,7 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: var(--font-size48);
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
@@ -500,14 +515,14 @@ h6 {
 #hero h2 {
   color: #2c4964;
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: var(--font-size24);
 }
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--font-size14);
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 35px;
@@ -539,12 +554,12 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 28px;
+    font-size: var(--font-size28);
     line-height: 36px;
   }
 
   #hero h2 {
-    font-size: 18px;
+    font-size: var(--font-size18);
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -574,12 +589,12 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: var(--font-size32);
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #2c4964;
+  color: var(--green);
 }
 
 .section-title h2::before {
@@ -625,7 +640,7 @@ section {
 }
 
 .breadcrumbs h2 {
-  font-size: 24px;
+  font-size: var(--font-size24);
   font-weight: 300;
   margin: 0;
 }
@@ -642,7 +657,7 @@ section {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: var(--font-size14);
 }
 
 .breadcrumbs ol li+li {
@@ -682,7 +697,7 @@ section {
 
 .why-us .content h3 {
   font-weight: 700;
-  font-size: 34px;
+  font-size: var(--font-size34);
   margin-bottom: 30px;
 }
 
@@ -700,7 +715,7 @@ section {
 }
 
 .why-us .content .more-btn i {
-  font-size: 14px;
+  font-size: var(--font-size14);
 }
 
 .why-us .content .more-btn:hover {
@@ -718,19 +733,19 @@ section {
 }
 
 .why-us .icon-boxes .icon-box i {
-  font-size: 40px;
+  font-size: var(--font-size40);
   color: var(--green);
   margin-bottom: 30px;
 }
 
 .why-us .icon-boxes .icon-box h4 {
-  font-size: 20px;
+  font-size: var(--font-size20);
   font-weight: 700;
   margin: 0 0 30px 0;
 }
 
 .why-us .icon-boxes .icon-box p {
-  font-size: 15px;
+  font-size: var(--font-size16);
   color: #848484;
 }
 
@@ -738,13 +753,13 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .icon-boxes h4 {
-  font-size: 18px;
+  font-size: var(--font-size18);
   color: var(--dark-green);
   margin-bottom: 15px;
 }
 
 .about .icon-boxes h3 {
-  font-size: 28px;
+  font-size: var(--font-size28);
   font-weight: 700;
   color: #2c4964;
   margin-bottom: 15px;
@@ -768,7 +783,7 @@ section {
 
 .about .icon-box .icon i {
   color: var(--green);
-  font-size: 32px;
+  font-size: var(--font-size32);
 }
 
 .about .icon-box:hover .icon {
@@ -784,7 +799,7 @@ section {
   margin-left: 85px;
   font-weight: 700;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: var(--font-size18);
 }
 
 .about .icon-box .title a {
@@ -799,7 +814,7 @@ section {
 .about .icon-box .description {
   margin-left: 85px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: var(--font-size14);
 }
 
 .about .video-box {
@@ -926,7 +941,7 @@ section {
   top: -25px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 20px;
+  font-size: var(--font-size20);
   background: var(--green);
   color: #fff;
   border-radius: 50px;
@@ -938,7 +953,7 @@ section {
 }
 
 .counts .count-box span {
-  font-size: 36px;
+  font-size: var(--font-size36);
   display: block;
   font-weight: 600;
   color: #082744;
@@ -948,7 +963,7 @@ section {
   padding: 0;
   margin: 0;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: var(--font-size14);
 }
 
 /*--------------------------------------------------------------
@@ -977,7 +992,7 @@ section {
 
 .services .icon-box .icon i {
   color: #fff;
-  font-size: 28px;
+  font-size: var(--font-size28);
 }
 
 .services .icon-box .icon::before {
@@ -996,7 +1011,7 @@ section {
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: var(--font-size24);
 }
 
 .services .icon-box h4 a {
@@ -1005,7 +1020,7 @@ section {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: var(--font-size14);
   margin-bottom: 0;
 }
 
@@ -1047,7 +1062,7 @@ section {
   color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
-  font-size: 13px;
+  font-size: var(--font-size14);
 }
 
 .appointment .php-email-form .error-message {
@@ -1097,7 +1112,7 @@ section {
 .appointment .php-email-form select {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
+  font-size: var(--font-size14);
   padding: 10px !important;
 }
 
@@ -1148,7 +1163,7 @@ section {
   border-radius: 0;
   border-right: 2px solid #ebf1f6;
   font-weight: 600;
-  font-size: 15px;
+  font-size: var(--font-size14);
 }
 
 .departments .nav-link:hover {
@@ -1166,7 +1181,7 @@ section {
 }
 
 .departments .details h3 {
-  font-size: 26px;
+  font-size: var(--font-size26);
   font-weight: 600;
   margin-bottom: 20px;
   color: #2c4964;
@@ -1227,13 +1242,13 @@ section {
 .doctors .member h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: var(--font-size20);
   color: #2c4964;
 }
 
 .doctors .member span {
   display: block;
-  font-size: 15px;
+  font-size: var(--font-size14);
   padding-bottom: 10px;
   position: relative;
   font-weight: 500;
@@ -1252,7 +1267,7 @@ section {
 
 .doctors .member p {
   margin: 10px 0 0 0;
-  font-size: 14px;
+  font-size: var(--font-size14);
 }
 
 .doctors .member .social {
@@ -1275,7 +1290,7 @@ section {
 
 .doctors .member .social a i {
   color: #fff;
-  font-size: 16px;
+  font-size: var(--font-size16);
   margin: 0 2px;
 }
 
@@ -1314,7 +1329,7 @@ section {
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: var(--font-size16);
   line-height: 24px;
   font-weight: 500;
   padding: 0 30px;
@@ -1323,7 +1338,7 @@ section {
 }
 
 .faq .faq-list .icon-help {
-  font-size: 24px;
+  font-size: var(--font-size24);
   position: absolute;
   right: 0;
   left: 20px;
@@ -1332,7 +1347,7 @@ section {
 
 .faq .faq-list .icon-show,
 .faq .faq-list .icon-close {
-  font-size: 24px;
+  font-size: var(--font-size24);
   position: absolute;
   right: 0;
   top: 0;
@@ -1400,14 +1415,14 @@ section {
 }
 
 .testimonials .testimonial-item h3 {
-  font-size: 18px;
+  font-size: var(--font-size18);
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
+  font-size: var(--font-size14);
   color: #999;
   margin: 0;
 }
@@ -1415,7 +1430,7 @@ section {
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
   color: rgba(0, 153, 106, 0.58);
-  font-size: 26px;
+  font-size: var(--font-size26);
 }
 
 .testimonials .testimonial-item .quote-icon-left {
@@ -1500,7 +1515,7 @@ section {
 }
 
 .contact .info i {
-  font-size: 20px;
+  font-size: var(--font-size20);
   color: var(--green);
   float: left;
   width: 44px;
@@ -1515,7 +1530,7 @@ section {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: var(--font-size22);
   font-weight: 600;
   margin-bottom: 5px;
   color: #2c4964;
@@ -1524,7 +1539,7 @@ section {
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: var(--font-size14);
   color: var(--dark-green);
 }
 
@@ -1595,7 +1610,7 @@ section {
 .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
+  font-size: var(--font-size14);
 }
 
 .contact .php-email-form input {
@@ -1644,7 +1659,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   color: #444444;
-  font-size: 14px;
+  font-size: var(--font-size14);
   background: rgba(0, 153, 106, 0.22);
 }
 
@@ -1659,7 +1674,7 @@ section {
 }
 
 #footer .footer-top .footer-contact h4 {
-  font-size: 22px;
+  font-size: var(--font-size22);
   margin: 0 0 30px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
@@ -1667,7 +1682,7 @@ section {
 }
 
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
+  font-size: var(--font-size14);
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
@@ -1675,7 +1690,7 @@ section {
 }
 
 #footer .footer-top h4 {
-  font-size: 16px;
+  font-size: var(--font-size16);
   font-weight: bold;
   color: #444444;
   position: relative;
@@ -1695,7 +1710,7 @@ section {
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
   color: var(--green);
-  font-size: 18px;
+  font-size: var(--font-size18);
   line-height: 1;
 }
 
@@ -1722,11 +1737,11 @@ section {
 }
 
 #footer .footer-newsletter {
-  font-size: 15px;
+  font-size: var(--font-size14);
 }
 
 #footer .footer-newsletter h4 {
-  font-size: 16px;
+  font-size: var(--font-size16);
   font-weight: bold;
   color: #444444;
   position: relative;
@@ -1756,7 +1771,7 @@ section {
   bottom: 0;
   border: 0;
   background: none;
-  font-size: 16px;
+  font-size: var(--font-size16);
   padding: 0 20px;
   background: var(--green);
   color: #fff;
@@ -1770,12 +1785,12 @@ section {
 
 #footer .credits {
   padding-top: 5px;
-  font-size: 13px;
+  font-size: var(--font-size14);
   color: #444444;
 }
 
 #footer .social-links a {
-  font-size: 18px;
+  font-size: var(--font-size18);
   display: inline-block;
   background: var(--green);
   color: #fff;
