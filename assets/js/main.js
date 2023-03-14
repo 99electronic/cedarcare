@@ -249,7 +249,13 @@ let print_r = (data) => {
     setTooltips();
   }, false);
 })();
-
+let isValidEmail = (email) => {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    return (true);
+  } else {
+    return false;
+  }
+}
 let submitContactUsForm = () => {
   let params = {
     endpointAction: "/website-email-sender-form",
@@ -258,17 +264,24 @@ let submitContactUsForm = () => {
     email: document.getElementById("contact-us-email").value,
     message: document.getElementById("contact-us-message").value
   }
-  api.call(params)
-      .then((res) => {
-        if (res.email == document.getElementById("contact-us-email").value && res.success == true) {
-          document.getElementById("contact-us-name").value = "";
-          document.getElementById("contact-us-email").value = "";
-          document.getElementById("contact-us-subject").value = "";
-          document.getElementById("contact-us-message").value = "";
-          document.getElementById("email-result").innerHTML = "<span style='color:green'>Message Sent! Thank You. We will get back to you ASAP</span>";
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+  if(params.name == "" || params.subject == "" || params.message == "" ||  !isValidEmail(params.email)) {
+    document.getElementById("email-result").innerHTML = "<span style='color:red'>all fields are required</span>";
+    if(params.email != "" && !isValidEmail(params.email)) {
+      document.getElementById("email-result").innerHTML = "<span style='color:red'>email address is invalid</span>";
+    }
+  } else {
+    api.call(params)
+        .then((res) => {
+          if (res.email == document.getElementById("contact-us-email").value && res.success == true) {
+            document.getElementById("contact-us-name").value = "";
+            document.getElementById("contact-us-email").value = "";
+            document.getElementById("contact-us-subject").value = "";
+            document.getElementById("contact-us-message").value = "";
+            document.getElementById("email-result").innerHTML = "<span style='color:green'>Message Sent! Thank You. We will get back to you ASAP</span>";
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+  }
 }
