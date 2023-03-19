@@ -292,7 +292,8 @@ let submitContactUsForm = () => {
             document.getElementById("contact-us-email").value = "";
             document.getElementById("contact-us-subject").value = "";
             document.getElementById("contact-us-message").value = "";
-            document.getElementById("email-result").innerHTML = "<span style='color:green'>Message Sent! Thank You. We will get back to you ASAP</span>";
+            document.getElementById("email-result").innerHTML = "<span style='color:green'>Thank you, your message has been sent successfully." +
+                "<br>We will get back to you as soon as possible.</span>";
           }
         })
         .catch((err) => {
