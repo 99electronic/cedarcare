@@ -280,9 +280,9 @@ let submitContactUsForm = () => {
     message: document.getElementById("contact-us-message").value
   }
   if(params.name == "" || params.subject == "" || params.message == "" ||  !isValidEmail(params.email)) {
-    document.getElementById("email-result").innerHTML = "<span style='color:red'>all fields are required<br>&nbsp;</span>";
+    document.getElementById("email-result").innerHTML = "<span style='color:red'>&nbsp;<br>all fields are required</span>";
     if(params.email != "" && !isValidEmail(params.email)) {
-      document.getElementById("email-result").innerHTML = "<span style='color:red'>email address is invalid<br>&nbsp;</span>";
+      document.getElementById("email-result").innerHTML = "<span style='color:red'>&nbsp;<br>email address is invalid</span>";
     }
   } else {
     api.call(params)
