@@ -230,10 +230,6 @@ let print_r = (data) => {
           "<span class='fa fa-angle-right' style='transform: translateY(2px)'></span>" +
           "</h5>";
       setTimeout(() => {
-        document.getElementById("appointment-button-container")
-            .innerHTML=`<button class="appointment-btn" type="submit">
-              <span href="#" id="make-appointment" style="color:white;">Make an Appointment</span>
-            </button>`;
             window.location.href=api.healow;
       }, 3000);
     }
