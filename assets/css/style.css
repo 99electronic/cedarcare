@@ -493,14 +493,8 @@ h6 {
 
 /*--------------------------------------------------------------
 # Hero Section
+//media-width contains #hero
 --------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: 90vh;
-  background: url("../img/hero-bg.webp") top center;
-  background-size: cover;
-  margin-bottom: -200px;
-}
 
 #hero .container {
   position: relative;
@@ -511,7 +505,7 @@ h6 {
   font-size: var(--font-size48);
   font-weight: 700;
   line-height: 56px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #2c4964;
 }
 
@@ -1830,6 +1824,13 @@ section {
 }
 
 @media only screen and (max-width: 770px ) {
+  #hero {
+    width: 100%;
+    height: 90vh;
+    background: url("../img/hero-bg-mobile.webp") top center;
+    background-size: cover;
+    margin-bottom: -200px;
+  }
   .top-appointment {
     display: none;
   }
@@ -1852,6 +1853,13 @@ section {
 
 /* large screen, shown by default */
 @media only screen and (min-width: 771px ) {
+  #hero {
+    width: 100%;
+    height: 90vh;
+    background: url("../img/hero-bg.webp") top center;
+    background-size: cover;
+    margin-bottom: -200px;
+  }
   .top-appointment {
     display: inline;
   }
