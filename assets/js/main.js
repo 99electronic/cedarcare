@@ -247,7 +247,7 @@ let print_r = (data) => {
     if (!event.target.matches('.form-check')) return;
     // Don't follow the link
     event.preventDefault();
-    document.getElementById("email-result").innerHTML = "&nbsp;";
+    document.getElementById("email-result").innerHTML = "&nbsp;<br>&nbsp;";
   }, false);
   function setTooltips() {
     let tooltips = document.querySelectorAll('[data-toggle="tooltip"]');
@@ -280,9 +280,9 @@ let submitContactUsForm = () => {
     message: document.getElementById("contact-us-message").value
   }
   if(params.name == "" || params.subject == "" || params.message == "" ||  !isValidEmail(params.email)) {
-    document.getElementById("email-result").innerHTML = "<span style='color:red'>all fields are required</span>";
+    document.getElementById("email-result").innerHTML = "<span style='color:red'>all fields are required<br>&nbsp;</span>";
     if(params.email != "" && !isValidEmail(params.email)) {
-      document.getElementById("email-result").innerHTML = "<span style='color:red'>email address is invalid</span>";
+      document.getElementById("email-result").innerHTML = "<span style='color:red'>email address is invalid<br>&nbsp;</span>";
     }
   } else {
     api.call(params)
