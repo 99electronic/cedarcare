@@ -234,7 +234,7 @@ let print_r = (data) => {
             .innerHTML=`<button class="appointment-btn" type="submit">
               <span href="#" id="make-appointment" style="color:white;">Make an Appointment</span>
             </button>`;
-            window.open(api.healow, '_blank');
+            window.location.href=api.healow;
       }, 3000);
     }
     if (!event.target.matches('.click-me')) return;
