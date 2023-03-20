@@ -15,14 +15,18 @@
 
   <!-- Vendor CSS Files -->
 
-  <link rel="preload" href="assets/vendor/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css"></noscript>
+
+
+  <link rel="preload" href="assets/vendor/fontawesome/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/fontawesome/styles.css"></noscript>
+
+
+
+
+
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -42,21 +46,21 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope"></i> <a href="mailto:contact@cedarcare.org">contact@cedarcare.org</a>
-        <i class="bi bi-phone"></i> +1 (425) 728-0907
+        <i class="fa fa-envelope"></i> <a href="mailto:contact@cedarcare.org">contact@cedarcare.org</a>
+        <i class="fa fa-phone"></i> +1 (425) 728-0907
       </div>
-      <div class="d-none d-lg-flex social-links align-items-center">
+      <div class="d-none d-lg-flex social-links align-items-center" style="font-size:22px;">
         <a  href="#" class="twitter" data-toggle="tooltip" data-placement="bottom" title="coming soon">
-          <i class="text-gray bi bi-twitter"></i>
+          <i class="text-gray fa fa-twitter-square"></i>
         </a>&nbsp;&nbsp;
         <a  href="#" class="facebook" data-toggle="tooltip" data-placement="bottom" title="coming soon">
-          <i class="text-gray bi bi-facebook"></i>
+          <i class="text-gray fa fa-facebook-square"></i>
         </a>&nbsp;&nbsp;
         <a  href="#" class="instagram" data-toggle="tooltip" data-placement="bottom" title="coming soon">
-          <i class="text-gray bi bi-instagram"></i>
+          <i class="text-gray fa fa-instagram"></i>
         </a>&nbsp;&nbsp;
         <a  href="#" class="linkedin" data-toggle="tooltip" data-placement="bottom" title="coming soon">
-          <i class="text-gray bi bi-linkedin"></i>
+          <i class="text-gray fa fa-linkedin-square"></i>
         </a>
       </div>
     </div>
@@ -68,7 +72,14 @@
 
       <h1 class="logo me-auto">
         <a href="#hero" aria-label="home">
-          <img class="top-logo" src="assets/img/mix/logo.png" alt="cedarcare logo">
+        <div class="d-flex d-inline-block justify-content-start">
+          <div>
+            <span class="fa fa-handshake"></span>
+          </div>
+          <div>
+            CedarCare
+          </div>
+        </div>
         </a>
       </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
@@ -80,7 +91,7 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="fa fa-menu mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
       <a href="#appointment" class="top-appointment appointment-btn scrollto">
@@ -128,7 +139,7 @@
               <div class="row">
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-receipt"></i>
+                    <i class="fa fa-medical-care"></i>
                     <h4>Chronic Care Management</h4>
                     <p class="text-center text-black">
                       We’re here to improve your blood pressure, diabetes, cholesterol,
@@ -138,7 +149,7 @@
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-cube-alt"></i>
+                    <i class="fa fa-group"></i>
                     <h4>Community Focus</h4>
                     <p class="text-center text-black">
                       Named after the Cedar River that flows through our community, CedarCare has financial assistance
@@ -148,7 +159,7 @@
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-images"></i>
+                    <i class="fa fa-patient"></i>
                     <h4>Our Patients Come First</h4>
                     <p class="text-center text-black">
                       Our motto is that “Patients come first, always.” You are more than a customer or a client to us.
@@ -199,14 +210,14 @@
             </p>
 
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <div class="icon"><i class="fa fa-clipboard-notes" style="transform: translate(0px, 4px);"></i></div>
               <h4 class="title green">Mentorship</h4>
               <p class="description">Every year, CedarCare has a track record of sending 3 or more premedical students
                 into the top medical schools in the US</p>
             </div>
 
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-gift"></i></div>
+              <div class="icon"><i class="fa fa-patient" style="transform: translate(3px, 4px);"></i></div>
               <h4 class="title green">Lives Saved</h4>
               <p class="description">Our health coaches have quickly notified our physicians when our patients at home
                 complained of chest pain, difficulty breathing, and thoughts of suicide before it was too late
@@ -214,7 +225,7 @@
             </div>
 
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-atom"></i></div>
+              <div class="icon"><i class="fa fa-worldwide" style="transform: translate(0px, 3px);"></i></div>
               <h4 class="title green">Impact</h4>
               <p class="description">Our health coaches make lasting and often lifelong changes in the lives of thousands
                 of patients suffering from chronic conditions</p>
@@ -238,7 +249,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-heartbeat"></i></div>
+              <div class="icon"><i class="fa fa-heartbeat"  style="transform: translate(0px, 5px);"></i></div>
               <h3><span>Remote Patient Monitoring</span></h3>
               <p>Our physicians work around the clock to help you manage your blood pressure, weight, and blood sugars at home</p>
             </div>
@@ -246,7 +257,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-pills"></i></div>
+              <div class="icon"><i class="fa fa-drugs"  style="transform: translate(0px, 3px);"></i></div>
               <h3><span>Prescriptions and Refills</span></h3>
               <p>We work closely with pharmacies in the community to provide the lowest cost medications and generic drugs to save you money</p>
             </div>
@@ -254,7 +265,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+              <div class="icon"><i class="fa fa-medical-care"  style="transform: translate(0px, 4px);"></i></div>
               <h3><span>Chronic Care Management</span></h3>
               <p>Our team of physicians and health coaches are passionate about encouraging exercise, dietary changes,
                 and medication adjustments for our patients with chronic conditions</p>
@@ -263,7 +274,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-dna"></i></div>
+              <div class="icon"><i class="fa fa-dna"  style="transform: translate(0px, 4px);"></i></div>
               <h3><span>Precision Medicine</span></h3>
               <p>When possible and with patient consent, we can use genetic testing to help prevent, diagnose,
                 and treat diseases in a more personalized and precise manner</p>
@@ -272,7 +283,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-wheelchair"></i></div>
+              <div class="icon"><i class="fa fa-disabled" style="transform: translate(0px, 4px);"></i></div>
               <h3><span>Access to Care</span></h3>
               <p>At CedarCare, we are committed to helping those with access to care issues such as the elderly and those with financial hardships</p>
             </div>
@@ -280,7 +291,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-notes-medical"></i></div>
+              <div class="icon"><i class="fa fa-doctor" style="transform: translate(0px, 4px);"></i></div>
               <h3><span>Referrals to Specialists</span></h3>
               <p>We work closely with cardiologists, dermatologists, ENTs, oncologists, and many other specialists at
                 Valley Medical Center and local hospitals and clinics</p>
@@ -323,7 +334,7 @@
           <div class="col-lg-4">
             <div class="info">
               <div class="address">
-                <i class="bi bi-geo-alt"></i>
+                <i class="fa fa-pin text-white"></i>
                 <h4>Location:</h4>
                 <p class="text-green-dark">4300 Talbot Road South, Suite 314
                   <br>
@@ -331,13 +342,13 @@
               </div>
 
               <div class="email">
-                <i class="bi bi-envelope"></i>
+                <i class="fa fa-envelope text-white"></i>
                 <h4>Email:</h4>
                 <p class="text-green-dark">contact@cedarcare.org</p>
               </div>
 
               <div class="phone">
-                <i class="bi bi-phone"></i>
+                <i class="fa fa-phone text-white"></i>
                 <h4>Call:</h4>
                 <p class="text-green-dark">+1 (425) 728-0907</p>
               </div>
@@ -405,23 +416,23 @@
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="#" style="background-color: var(--text-gray);" class="twitter" data-toggle="tooltip" data-placement="top" title="coming soon">
-          <i class="bx bxl-twitter"></i>
+          <i class="fa fa-twitter"></i>
         </a>
         <a href="#" style="background-color: var(--text-gray);" class="facebook" data-toggle="tooltip" data-placement="top" title="coming soon">
-          <i class="bx bxl-facebook"></i>
+          <i class="fa fa-facebook"></i>
         </a>
         <a href="#" style="background-color: var(--text-gray);" class="instagram" data-toggle="tooltip" data-placement="top" title="coming soon">
-          <i class="bx bxl-instagram"></i>
+          <i class="fa fa-instagram"></i>
         </a>
         <a href="#" style="background-color: var(--text-gray);" class="linkedin" data-toggle="tooltip" data-placement="top" title="coming soon">
-          <i class="bx bxl-linkedin"></i>
+          <i class="fa fa-linkedin"></i>
         </a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-arrow-up-c"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
